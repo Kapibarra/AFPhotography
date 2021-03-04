@@ -1,0 +1,24 @@
+@import '_variables.scss';
+.header {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 50px;
+    width: 100%;
+    max-width: 1400px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__nav-item {
+    margin-right: 10px;
+    text-decoration: none;
+    color: $black;
+}

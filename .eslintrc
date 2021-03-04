@@ -23,7 +23,9 @@
 "no-trailing-spaces": "off",
 "func-call-spacing" : "off",
 "max-len": "off",
-"no-invalid-this": 0
+"no-invalid-this": 0,
+"new-cap": "off"
+
 
 
     },
