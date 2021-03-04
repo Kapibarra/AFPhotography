@@ -12,13 +12,22 @@
     margin: 0 auto;
 }
 
+.header__logo {
+    letter-spacing: 24px;
+    border-bottom: 0.1px solid black;
+    padding-bottom: 2px;
+}
+
 .header__nav {
-    display: flex;
     flex-direction: row;
 }
 
 .header__nav-item {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 35px;
+    vertical-align: bottom;
     margin-right: 10px;
     text-decoration: none;
     color: $black;
+    & :hover {}
 }
