@@ -7,7 +7,7 @@
     width: 100%;
     max-width: 1400px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +35,15 @@
     transition: transform 250ms ease-in-out;
 }
 
+.active {
+    border-bottom: 1px solid $black;
+}
+
 .header__nav-item:hover {
     border-bottom: 1px solid $black;
     transform: scaleX(1);
+}
+
+.header__nav-item a::after {
+    border-bottom: 1px solid black;
 }

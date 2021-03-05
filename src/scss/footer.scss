@@ -1,0 +1,49 @@
+.copyright {
+    font-family: 'Julius Sans One', sans-serif;
+    // font-family: 'Six Caps', sans-serif;
+    color: $black;
+    font-size: 12px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    opacity: 0.7;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer__logo {
+    font-family: 'Julius Sans One', sans-serif;
+    // font-family: 'Six Caps', sans-serif;
+    color: $black;
+    font-size: 24px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    opacity: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer__socialnetwork {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social-logo {
+    height: 45px;
+    width: 45px;
+    filter: grayscale(100);
+}
+
+.footer__social-logo:hover {
+    cursor: pointer;
+    transition: all 0.1s;
+    filter: none;
+}
