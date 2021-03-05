@@ -17,6 +17,12 @@
 .header__logo {
     letter-spacing: 12px;
     padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.header__logo a {
+    text-decoration: none;
+    color: $black;
 }
 
 .header__nav {
@@ -33,6 +39,7 @@
     color: $black;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
+    border-bottom: 1px solid rgba($color: $black, $alpha: 0)
 }
 
 .active {
@@ -40,8 +47,9 @@
 }
 
 .header__nav-item:hover {
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid rgba($color: $black, $alpha: 1);
     transform: scaleX(1);
+    transition: all 0.8s;
 }
 
 .header__nav-item a::after {
