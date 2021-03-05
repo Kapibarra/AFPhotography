@@ -49,18 +49,38 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HTMLWebpackPlugin({
+            filename: "index.html",
             template: "index.html",
             minify: {
                 removeComments: isProd,
                 collapseWhitespace: isProd,
             },
         }),
-        // new CopyPlugin([
-        //   {
-        //     from: path.resolve(__dirname, "src/favicon.ico"),
-        //     to: path.resolve(__dirname, "dist"),
-        //   },
-        // ]),
+        new HTMLWebpackPlugin({
+            filename: "film.html",
+            template: "film.html",
+            minify: {
+                removeComments: isProd,
+                collapseWhitespace: isProd,
+            },
+        }),
+        new HTMLWebpackPlugin({
+            filename: "about.html",
+            template: "about.html",
+            minify: {
+                removeComments: isProd,
+                collapseWhitespace: isProd,
+            },
+        }),
+        new HTMLWebpackPlugin({
+            filename: "contacts.html",
+            template: "contacts.html",
+            minify: {
+                removeComments: isProd,
+                collapseWhitespace: isProd,
+            },
+        }),
+
         new MiniCssExtractPlugin({
             filename: filename("css"),
         }),
@@ -74,12 +94,15 @@ module.exports = {
                 use: [{
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            // hmr: isDev,
-                            // reloadAll: true,
+                            hmr: isDev,
+                            reloadAll: true,
                         },
                     },
-                    "css-loader",
-                    "sass-loader",
+                    // Creates `style` nodes from JS strings
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
                 ],
             },
             {
