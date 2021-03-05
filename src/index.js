@@ -1,22 +1,25 @@
 import './scss/index.scss'
 
 const gallery = document.querySelector('#gallery');
-const getVal = function(elem,style){return parseInt(window.getComputedStyle(elem).getPropertyValue(style));};
-const getHeight = function(item) { return item.querySelector('.content').getBoundingClientRect().height; };
+const getVal = function(elem, style) {
+    return parseInt(window.getComputedStyle(elem).getPropertyValue(style));
+};
+const getHeight = function(item) {
+    return item.querySelector('.content').getBoundingClientRect().height;
+};
 const resizeAll = function() {
     const altura = getVal(gallery, 'grid-auto-rows');
     const gap = getVal(gallery, 'grid-row-gap');
-    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+    gallery.querySelectorAll('.gallery-item').forEach(function(item) {
         const el = item;
         el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
     });
 };
-gallery.querySelectorAll('img').forEach(function (item) {
+gallery.querySelectorAll('img').forEach(function(item) {
     item.classList.add('byebye');
     if (item.complete) {
-        console.log(item.src);
-    }
-    else {
+        // console.log(item.src);
+    } else {
         item.addEventListener('load', function() {
             const altura = getVal(gallery, 'grid-auto-rows');
             const gap = getVal(gallery, 'grid-row-gap');

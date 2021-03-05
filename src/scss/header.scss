@@ -28,8 +28,14 @@
     // font-family: 'Six Caps', sans-serif;
     font-size: 18px;
     vertical-align: bottom;
-    margin-right: 10px;
+    margin-right: 5px;
     text-decoration: none;
     color: $black;
-    & :hover {}
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.header__nav-item:hover {
+    border-bottom: 1px solid $black;
+    transform: scaleX(1);
 }
