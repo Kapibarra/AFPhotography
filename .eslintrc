@@ -25,10 +25,10 @@
 "max-len": "off",
 "no-invalid-this": 0,
 "new-cap": "off",
-"brace-style":"0",
-"space-before-blocks":"0",
-"block-spacing":"0",
-"space-before-function-paren":"0"
+"brace-style":0,
+"space-before-blocks":0,
+"block-spacing":0,
+"space-before-function-paren":0
 
 
 
