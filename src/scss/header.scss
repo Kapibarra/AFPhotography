@@ -4,10 +4,12 @@
     // font-family: 'Six Caps', sans-serif;
     color: $black;
     font-size: 50px;
-    width: 100%;
+    // width: 100%;
     max-width: 1400px;
     padding-top: 40px;
     padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,4 +56,13 @@
 
 .header__nav-item a::after {
     border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 1280px) {
+    .desktop-nav {
+        display: none;
+    }
+    .nav-toggle {
+        display: block !important;
+    }
 }
