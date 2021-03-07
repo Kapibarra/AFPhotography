@@ -83,7 +83,8 @@ function burgerButtonToggle() {
     const burgerButton = document.querySelector(".nav-toggle")
     const yPos = window.scrollY;
         if (yPos > 10) {
-        burgerButton.classList.add("unvisible");
+        burgerButton.classList.add("unvisible")
+        burgerButton.classList.remove("visible");
         } else {
             burgerButton.classList.remove("unvisible");
             burgerButton.classList.add("visible");

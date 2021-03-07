@@ -1,0 +1,20 @@
+.about__article {
+    max-width: 600px;
+    padding: 50 15 15 60;
+    margin: 0 auto;
+}
+
+.main__title {
+    font-family: 'Julius Sans One', sans-serif;
+    color: $black;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.main__article-text {
+    font-family: 'Julius Sans One', sans-serif;
+    color: $black;
+    font-size: 24px;
+    text-align: justify;
+}
