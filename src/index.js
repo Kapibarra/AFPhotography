@@ -1,5 +1,6 @@
 import "./scss/index.scss";
 import { createApi } from 'unsplash-js';
+// import Inputmask from "inputmask";
 
 /* UNSPLASH API & GALLERY AUTO GRID */
 let page = 1;
@@ -136,3 +137,8 @@ window.onscroll = function (ev) {
     loadImage(++page)
   }
 };
+
+/* INPUT MASK */
+// const selector = document.querySelectorAll('input[type="tel"]')
+// const inputMask = new Inputmask('+7 (999) 999-99-99')
+// inputMask.mask(selector);
