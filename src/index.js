@@ -1,5 +1,7 @@
 import "./scss/index.scss";
 import { createApi } from 'unsplash-js';
+
+/* UNSPLASH API & GALLERY AUTO GRID */
 let page = 1;
 function loadImage(page) {
   const unsplash = createApi({
@@ -74,6 +76,7 @@ function loadImage(page) {
 
 loadImage(1)
 
+/* SCROLL TO TOP BTN */
 const scrollToTopButton = document.getElementById("js-top");
 const scrollFunc = () => {
   const y = window.scrollY;
@@ -127,6 +130,7 @@ function burgerButtonToggle() {
 }
 window.addEventListener("scroll", burgerButtonToggle);
 
+/* AUTO ImageLoad 20per page*/ 
 window.onscroll = function (ev) {
   if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page <= 3) {
     loadImage(++page)
