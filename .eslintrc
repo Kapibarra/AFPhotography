@@ -10,6 +10,7 @@
         "jquery": true
     },
     "rules": {
+"no-console": "off",
 "semi":"off",
 "arrow-parents": "off",
 "comma-dengle": "off",
@@ -30,6 +31,7 @@
 "block-spacing":0,
 "space-before-function-paren":0,
 "no-tabs": 0
+
 
 
 
