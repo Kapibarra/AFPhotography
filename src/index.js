@@ -142,3 +142,5 @@ window.onscroll = function (ev) {
 // const selector = document.querySelectorAll('input[type="tel"]')
 // const inputMask = new Inputmask('+7 (999) 999-99-99')
 // inputMask.mask(selector);
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
