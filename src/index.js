@@ -133,7 +133,7 @@ window.addEventListener("scroll", burgerButtonToggle);
 
 /* AUTO ImageLoad 20per page*/ 
 window.onscroll = function (ev) {
-  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page <= 3) {
+  if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight && page <= 3) {
     loadImage(++page)
   }
 };
