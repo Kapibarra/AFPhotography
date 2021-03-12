@@ -27,14 +27,6 @@ function loadImage(page) {
         const photo = e.urls.small;
         const div = createCardWrapper();
         const img = new Image();
-
-        if (i === photosArr.length - 1) {
-          img.onload = () => {
-            if (window.innerHeight >= document.body.offsetHeight && page <= 3) {
-              loadImage(++page);
-            }
-          };
-        }
         img.src = photo;
 
         div.lastChild.append(img);
