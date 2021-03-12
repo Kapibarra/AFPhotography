@@ -16,6 +16,7 @@
 }
 
 .full {
+    // transition: opacity 2s ease-in;
     position: fixed;
     left: 0;
     top: 0;
@@ -98,4 +99,13 @@
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     }
+}
+
+#big {
+  opacity: 0;
+  transition: all 1s ease-in;
+}
+
+.fullBig#big {
+  opacity: 1;
 }
