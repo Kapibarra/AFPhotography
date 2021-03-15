@@ -28,6 +28,7 @@ function loadImage(page) {
         const div = createCardWrapper();
         const img = new Image();
         img.src = photo;
+        img.alt = 'image'
 
         div.lastChild.append(img);
         gallery.append(div);
@@ -57,6 +58,7 @@ function loadImage(page) {
         }
       });
 
+
       window.addEventListener("resize", () => {resizeAll(gallery)});
       items.forEach(function (item) {
         createBigCard(item, gallery);
@@ -66,13 +68,6 @@ function loadImage(page) {
 }
 
 loadImage(1)
-
-// window.onload = () => {
-//   console.log(document.body.offsetHeight);
-//   if ((window.innerHeight >= document.body.offsetHeight) && (page <= 3)) {
-//     loadImage(++page)
-// }
-// };
 
 /* SCROLL TO TOP BTN */
 const scrollToTopButton = document.getElementById("js-top");
