@@ -79,10 +79,20 @@
     transition: transform 3s ease;
     transition: all 3s ease;
     cursor: pointer;
-    opacity:0;
+    opacity: 0;
 }
+
 .gallery .gallery-item.activeimg {
-    opacity:1;
+    opacity: 1;
+}
+
+#big {
+    opacity: 0;
+    transition: all .6s ease-in;
+}
+
+.fullBig#big {
+    opacity: 1;
 }
 
 // .gallery .gallery-item:hover {
