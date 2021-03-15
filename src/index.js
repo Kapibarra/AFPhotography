@@ -1,5 +1,6 @@
 import "./scss/index.scss";
 import { createApi } from 'unsplash-js';
+import {createBigCard, createCardWrapper, getHeight, getVal, resizeAll} from './utils';
 // import Inputmask from "inputmask";
 
 /* UNSPLASH API & GALLERY AUTO GRID */
@@ -9,39 +10,30 @@ function loadImage(page) {
     accessKey: 'YiJBrVJIK2ScDQUqWmAfskLIYwFWBPfCIA7xww7SfSk',
   });
 
-  unsplash.users.getPhotos({ username: 'annfish', perPage: 20, page: page }).then((result) => {
+  unsplash.users.getPhotos({ username: 'annfish', perPage: 10, page: page }).then((result) => {
     if (result.errors) {
       // handle error here
       console.log('error occurred: ', result.errors[0]);
     } else {
+      const items = [];
+      const gallery = document.querySelector("#gallery");
+      console.log(document.body.offsetHeight);
       // handle success here
       const photo = result.response;
-      console.log(photo);
+  
       const photosArr = photo.results
-      photosArr.forEach((e) => {
+
+      photosArr.forEach((e, i) => {
         const photo = e.urls.small;
-        const div = document.createElement('div');
-        div.className = 'gallery-item';
-        div.innerHTML = `<div class="content"><img src=${photo}></div>`;
-        document.querySelector("#gallery").append(div)
+        const div = createCardWrapper();
+        const img = new Image();
+        img.src = photo;
+
+        div.lastChild.append(img);
+        gallery.append(div);
+        items.push(div);
       })
 
-      const gallery = document.querySelector("#gallery");
-      const getVal = function (elem, style) {
-        return parseInt(window.getComputedStyle(elem).getPropertyValue(style));
-      };
-      const getHeight = function (item) {
-        return item.querySelector(".content").getBoundingClientRect().height;
-      };
-      const resizeAll = function () {
-        const altura = getVal(gallery, "grid-auto-rows");
-        const gap = getVal(gallery, "grid-row-gap");
-        gallery.querySelectorAll(".gallery-item").forEach(function (item) {
-          const el = item;
-          el.style.gridRowEnd =
-            "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-        });
-      };
       gallery.querySelectorAll("img").forEach(function (item) {
         item.classList.add("byebye");
         if (item.complete) {
@@ -64,18 +56,23 @@ function loadImage(page) {
           });
         }
       });
-      window.addEventListener("resize", resizeAll);
-      gallery.querySelectorAll(".gallery-item").forEach(function (item) {
-        item.addEventListener("click", function () {
-          item.classList.toggle("full");
-          item.lastChild.lastChild.src = item.lastChild.lastChild.src.replace('w=400', 'w=1080')
-        });
+
+      window.addEventListener("resize", () => {resizeAll(gallery)});
+      items.forEach(function (item) {
+        createBigCard(item, gallery);
       });
     }
   });
 }
 
 loadImage(1)
+
+// window.onload = () => {
+//   console.log(document.body.offsetHeight);
+//   if ((window.innerHeight >= document.body.offsetHeight) && (page <= 3)) {
+//     loadImage(++page)
+// }
+// };
 
 /* SCROLL TO TOP BTN */
 const scrollToTopButton = document.getElementById("js-top");
