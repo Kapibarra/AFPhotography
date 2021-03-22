@@ -10,7 +10,7 @@ function loadImage(page) {
     accessKey: 'YiJBrVJIK2ScDQUqWmAfskLIYwFWBPfCIA7xww7SfSk',
   });
 
-  unsplash.users.getPhotos({ username: 'annfish', perPage: 10, page: page }).then((result) => {
+  unsplash.users.getPhotos({ username: 'annfish', perPage: 20, page: page }).then((result) => {
     if (result.errors) {
       // handle error here
       console.log('error occurred: ', result.errors[0]);
