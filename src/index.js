@@ -10,7 +10,7 @@ function loadImage(page) {
     accessKey: 'YiJBrVJIK2ScDQUqWmAfskLIYwFWBPfCIA7xww7SfSk',
   });
 
-  unsplash.users.getPhotos({ username: 'annfish', perPage: 10, page: page }).then((result) => {
+  unsplash.users.getPhotos({ username: 'annfish', perPage: 20, page: page }).then((result) => {
     if (result.errors) {
       // handle error here
       console.log('error occurred: ', result.errors[0]);
@@ -125,7 +125,7 @@ window.addEventListener("scroll", burgerButtonToggle);
 
 /* AUTO ImageLoad 20per page*/ 
 window.onscroll = function (ev) {
-  if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight && page <= 3) {
+  if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight && page <= 10) {
     loadImage(++page)
   }
 };
