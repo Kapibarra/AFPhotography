@@ -89,18 +89,30 @@ module.exports = {
         })
     ],
     module: {
-        rules: [{
+        rules: [
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                  {
+                    loader: 'file-loader',
+                  },
+                ],
+              },
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader'
+            },
+            {
                 test: /\.s[ac]ss$/i,
                 use: [{
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            // hmr: isDev,
-                            // reloadAll: true,
+                            //  url: false 
                         },
                     },
                     // Creates `style` nodes from JS strings
           // Translates CSS into CommonJS
-          "css-loader",
+          { loader: 'css-loader', options: { url: false } },
           // Compiles Sass to CSS
           "sass-loader",
                 ],

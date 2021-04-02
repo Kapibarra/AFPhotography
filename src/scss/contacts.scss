@@ -28,6 +28,11 @@
         max-width: 600px;
         flex: 1;
         transition: 1s;
+        filter: grayscale(10);
+        &:hover {
+            transition: all 2s;
+            filter: none;
+        }
     }
     
     .contacts__header>h1 {
