@@ -38,6 +38,7 @@
     max-width: 100%;
     max-height: 95vh;
     margin: auto;
+    filter: grayscale(0);
 }
 
 .byebye {
@@ -106,6 +107,6 @@
 
 @media (max-width: 400px) {
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 }
