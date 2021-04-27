@@ -193,8 +193,8 @@ const photos = [
     },
     {
         id: '39',
-        full: 'src/img/gallery/fullsize239.jpg',
-        thumb: 'src/img/gallery/thumb239.jpg',
+        full: 'src/img/gallery/fullsize39.jpg',
+        thumb: 'src/img/gallery/thumb39.jpg',
     },
     {
         id: '40',
