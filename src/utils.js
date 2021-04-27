@@ -38,7 +38,7 @@ const onCardClickHandler = (flag, container, card) => {
       }, 50);
     };
 
-    img.src = card.lastChild.lastChild.src.replace("w=400", "w=1080");
+    img.src = card.lastChild.lastChild.src.replace("thumb", "fullsize");
   }
 };
 
