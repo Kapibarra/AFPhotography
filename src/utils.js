@@ -1,3 +1,5 @@
+
+
 const createCardWrapper = () => {
   const div = document.createElement("div");
   div.className = "gallery-item";
@@ -12,6 +14,7 @@ const onCardClickHandler = (flag, container, card) => {
     const div = createCardWrapper();
     const img = new Image();
 
+
     div.lastChild.append(img);
     flag = div;
 
@@ -23,6 +26,7 @@ const onCardClickHandler = (flag, container, card) => {
 
       div.addEventListener("click", () => {
         div.classList.remove("fullBig");
+
         setTimeout(() => {
           div.remove();
           flag = null;

@@ -1,11 +1,11 @@
 import "./scss/index.scss";
 import { createApi } from 'unsplash-js';
 import {createBigCard, createCardWrapper, getHeight, getVal, resizeAll} from './utils';
-// import photos from './gallery'
+import photos from './gallery'
 
 
 /* UNSPLASH API & GALLERY AUTO GRID */
-let page = 1;
+// let page = 1;
 function loadImage(page) {
   const unsplash = createApi({
     accessKey: 'YiJBrVJIK2ScDQUqWmAfskLIYwFWBPfCIA7xww7SfSk',
@@ -20,15 +20,15 @@ function loadImage(page) {
       const gallery = document.querySelector("#gallery");
       console.log(document.body.offsetHeight);
       // handle success here
-      const photo = result.response;
+      // const photo = result.response;
   
-      const photosArr = photo.results
+      const photosArr = photos
 
       photosArr.forEach((e, i) => {
-        const photo = e.urls.small;
+        // const photo = photos;
         const div = createCardWrapper();
         const img = new Image();
-        img.src = photo;
+        img.src = e.thumb;
         img.alt = 'image'
 
         div.lastChild.append(img);
@@ -37,7 +37,7 @@ function loadImage(page) {
       })
 
       gallery.querySelectorAll("img").forEach(function (item) {
-        item.classList.add("byebye");
+        item.classList.add("activeimg");
         if (item.complete) {
           const altura = getVal(gallery, "grid-auto-rows");
           const gap = getVal(gallery, "grid-row-gap");
@@ -125,11 +125,11 @@ function burgerButtonToggle() {
 window.addEventListener("scroll", burgerButtonToggle);
 
 /* AUTO ImageLoad 20per page*/ 
-window.onscroll = function (ev) {
-  if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight && page <= 10) {
-    loadImage(++page)
-  }
-};
+// window.onscroll = function (ev) {
+//   if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight && page <= 10) {
+//     loadImage(++page)
+//   }
+// };
 
 /* INPUT MASK */
 // const selector = document.querySelectorAll('input[type="tel"]')
