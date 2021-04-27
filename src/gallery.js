@@ -216,8 +216,7 @@ const photos = [
         full: 'src/img/gallery/fullsize43.jpg',
         thumb: 'src/img/gallery/thumb43.jpg',
     },
-
-
+    
 ]
 
 export default photos

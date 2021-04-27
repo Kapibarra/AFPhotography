@@ -29,7 +29,8 @@ function loadImage(page) {
         const div = createCardWrapper();
         const img = new Image();
         img.src = e.thumb;
-        img.alt = 'image'
+        img.alt = 'image';
+        img.loading = 'lazy'
 
         div.lastChild.append(img);
         gallery.append(div);
