@@ -216,6 +216,21 @@ const photos = [
         full: 'src/img/gallery/fullsize43.jpg',
         thumb: 'src/img/gallery/thumb43.jpg',
     },
+    {
+        id: '44',
+        full: 'src/img/gallery/fullsize44.jpg',
+        thumb: 'src/img/gallery/thumb44.jpg',
+    },
+    {
+        id: '45',
+        full: 'src/img/gallery/fullsize45.jpg',
+        thumb: 'src/img/gallery/thumb45.jpg',
+    },
+    {
+        id: '46',
+        full: 'src/img/gallery/fullsize46.jpg',
+        thumb: 'src/img/gallery/thumb46.jpg',
+    },
     
 ]
 
