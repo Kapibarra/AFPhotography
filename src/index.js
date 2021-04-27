@@ -1,7 +1,8 @@
 import "./scss/index.scss";
 import { createApi } from 'unsplash-js';
 import {createBigCard, createCardWrapper, getHeight, getVal, resizeAll} from './utils';
-// import Inputmask from "inputmask";
+// import photos from './gallery'
+
 
 /* UNSPLASH API & GALLERY AUTO GRID */
 let page = 1;
@@ -136,3 +137,4 @@ window.onscroll = function (ev) {
 // inputMask.mask(selector);
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
+

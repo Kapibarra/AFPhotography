@@ -7,6 +7,7 @@
         "@babel/polyfill": "^7.12.1",
         "inputmask": "^5.0.5",
         "just-validate": "^1.5.0",
+        "lightgallery.js": "^1.4.0",
         "normalize.css": "^8.0.1",
         "unsplash-js": "^7.0.4"
     },
