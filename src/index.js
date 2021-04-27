@@ -4,8 +4,8 @@ import {createBigCard, createCardWrapper, getHeight, getVal, resizeAll} from './
 import photos from './gallery'
 
 
-/* UNSPLASH API & GALLERY AUTO GRID */
-// let page = 1;
+/* GALLERY AUTO GRID */
+
 function loadImage(page) {
   const unsplash = createApi({
     accessKey: 'YiJBrVJIK2ScDQUqWmAfskLIYwFWBPfCIA7xww7SfSk',
