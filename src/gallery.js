@@ -231,7 +231,11 @@ const photos = [
         full: 'src/img/gallery/fullsize46.jpg',
         thumb: 'src/img/gallery/thumb46.jpg',
     },
-    
+    {
+        id: '47',
+        full: 'src/img/gallery/fullsize47.jpg',
+        thumb: 'src/img/gallery/thumb47.jpg',
+    },
 ]
 
 export default photos
