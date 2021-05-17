@@ -1,6 +1,7 @@
 @import '_variables.scss';
 .header {
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
     // font-family: 'Six Caps', sans-serif;
     color: $black;
     font-size: 50px;
@@ -36,8 +37,9 @@
 }
 
 .header__nav-item {
-    font-family: 'Julius Sans One', sans-serif;
-    // font-family: 'Six Caps', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
     font-size: 18px;
     vertical-align: bottom;
     margin-right: 5px;
