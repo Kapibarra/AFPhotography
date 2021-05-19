@@ -3,6 +3,11 @@
     border-bottom: 1px solid #212931;
 }
 
+a {
+    text-decoration: none;
+    color: #212931;
+}
+
 .packages__title {
     width: 100%;
     max-width: 1400px;
@@ -25,8 +30,8 @@
     font-family: "Raleway", sans-serif;
     font-weight: 200;
     font-size: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     letter-spacing: 4px;
 }
 
@@ -143,6 +148,23 @@
     cursor: pointer;
 }
 
+.addpackages-item__button-price {
+    padding: 12px 10px;
+    border: 0;
+    width: 430px;
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(to right, #f1f1f1 0%, #e0e0e0 100%);
+    border-radius: 3px;
+    margin-top: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    color: $black;
+    cursor: pointer;
+    font-weight: 300;
+}
+
 .packages__description-title {
     width: 100%;
     max-width: 1400px;
@@ -173,4 +195,60 @@
     letter-spacing: 2px;
     line-height: 30px;
     list-style: circle;
+}
+
+.animation {
+    animation-name: move;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
+.a1 {
+    animation-delay: 0.5s;
+}
+
+.a2 {
+    animation-delay: 0.6s;
+}
+
+.a3 {
+    animation-delay: 0.7s;
+}
+
+.a4 {
+    animation-delay: 0.8s;
+}
+
+.a5 {
+    animation-delay: 0.9s;
+}
+
+.a6 {
+    animation-delay: 1s;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        padding: 5px;
+        width: 440px;
+    }
 }
