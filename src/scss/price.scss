@@ -41,6 +41,8 @@
 }
 
 .item__img-container {
+    width: 100%;
+    max-width: 430px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
