@@ -1,6 +1,8 @@
 .packages {
     border-top: 1px solid #212931;
     border-bottom: 1px solid #212931;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 a {
@@ -44,6 +46,12 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 60px;
+}
+
+.packages__container-item {
+    width: 430px;
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
 .item__img-container {
@@ -194,7 +202,7 @@ a {
 }
 
 .packages__description-text {
-    width: 100%;
+    width: 90%;
     max-width: 1400px;
     margin: 0 auto;
     display: block;
@@ -206,6 +214,7 @@ a {
     font-family: "Raleway", sans-serif;
     font-weight: 300;
     font-size: 18px;
+    width: 90%;
     letter-spacing: 2px;
     line-height: 30px;
     list-style: circle;
@@ -264,5 +273,81 @@ a {
         opacity: 1;
         padding: 5px;
         width: 440px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .packages__container-item {
+        max-width: 396px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .item__description {
+        width: unset;
+    }
+    .item__img-container img {
+        width: 100%;
+        max-width: 185px;
+    }
+    .addpackages-item__description {
+        width: 370px;
+    }
+    .addpackages-item__img-container img {
+        width: 100%;
+        max-width: 185px;
+    }
+    .addpackages-item__button-price {
+        width: 370px;
+    }
+    .packages__description-title {
+        font-size: 30px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 30px !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    h2 {
+        font-size: 18px !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    li {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .packages__container-item {
+        max-width: 318px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .item__description {
+        width: unset;
+    }
+    .item__img-container img {
+        width: 100%;
+        max-width: 145px;
+    }
+    .addpackages-item__description {
+        width: 300px;
+    }
+    .addpackages-item__img-container {
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .addpackages-item__img-container img {
+        width: 100%;
+        max-width: 145px;
+    }
+    .addpackages-item__button-price {
+        width: 300px;
+    }
+    h1 {
+        font-size: 24px !important;
     }
 }
