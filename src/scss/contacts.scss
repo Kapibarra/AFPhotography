@@ -104,15 +104,13 @@
     }
     
     .contacts__social-logo-item {
-        margin-top: 20px;
-        width: 100%;
-        max-width: 400px;
-        height: 60px;
+        margin-top: 15px;
+        width: 300px;
         transition: all ease-in-out 150ms;
-        filter: brightness(0.8);
+        filter: grayscale(0.6);
         &:hover {
             transition: all ease-in-out 150ms;
-            filter: brightness(1.00);
+            filter: grayscale(0);
         }
     }
     
