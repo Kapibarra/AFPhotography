@@ -97,6 +97,37 @@
         cursor: pointer;
     }
     
+    .contacts__social-logo-wrapper {
+        width: 80%;
+        max-width: 260px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contacts__social-logo-item {
+        margin-top: 10px;
+        width: 65px;
+        height: 65px;
+    }
+    
+    .contacts__social-title {
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 35px;
+        color: $black;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    
+    .contacts__social-subtitle {
+        font-family: 'Julius Sans One', sans-serif;
+        color: $black;
+        margin-top: 5px;
+        font-weight: normal;
+        font-size: 15px;
+        color: rgba($black, .4);
+    }
+    
     .animation {
         animation-name: move;
         animation-duration: 0.6s;
