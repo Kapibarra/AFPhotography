@@ -218,3 +218,19 @@
             margin: 0 auto;
         }
     }
+    
+    @media screen and (max-width: 414px) {
+        .contacts__social-logo-item {
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+        .contacts__social-title {
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 0px;
+        }
+        .contacts__social-subtitle {
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+    }
