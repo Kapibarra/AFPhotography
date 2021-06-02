@@ -108,6 +108,12 @@
         margin-top: 10px;
         width: 65px;
         height: 65px;
+        transition: all ease-in-out 100ms;
+        filter: brightness(0.95);
+        &:hover {
+            transition: all ease-in-out 100ms;
+            filter: brightness(1.00);
+        }
     }
     
     .contacts__social-title {
