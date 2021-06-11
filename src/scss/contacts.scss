@@ -141,6 +141,13 @@
         }
     }
     
+    #sendNew:disabled {
+        cursor: not-allowed;
+        color: rgb(199, 199, 199);
+        background: rgb(209, 209, 209);
+        opacity: 0.3;
+    }
+    
     .private-policy {
         border: none;
         width: 100%;
