@@ -132,6 +132,26 @@
         color: rgba($black, .4);
     }
     
+    .terms {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    
+    .private-policy {
+        border: none;
+        width: 100%;
+        max-width: 200px;
+        line-height: unset;
+        text-decoration: none;
+        color: #000;
+        &:hover {
+            border-top: unset;
+            border-bottom: unset;
+        }
+    }
+    
     .animation {
         animation-name: move;
         animation-duration: 0.6s;
