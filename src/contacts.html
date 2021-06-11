@@ -48,6 +48,10 @@
                             <input type="email" class="form-field animation a4" placeholder="E-mail Adress" name="_replyto">
                             <input type="text" class="form-field animation a5" placeholder="Message" name="message">
                             <button type="submit" class="animation a6">SEND</button>
+                            <div class="terms">
+                                <input type="checkbox" checked onchange="document.getElementById('sendNew').disabled = !this.checked;" />
+                                <a class="private-policy" href="policy.html">Политика конфиденциальности</a>
+                            </div>
                         </div>
                     </form>
                     <h1 class="contacts__social-title animation a4">Call me!</h1>
