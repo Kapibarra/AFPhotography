@@ -135,14 +135,19 @@
     .terms {
         display: flex;
         justify-content: space-between;
-        margin: 0 auto;
         margin-top: 15px;
+        & input {
+            margin-top: 5px;
+        }
     }
     
     .private-policy {
         border: none;
         width: 100%;
-        max-width: 200px;
+        max-width: 250px;
+        font-family: Raleway;
+        font-weight: 200;
+        font-size: 12px;
         line-height: unset;
         text-decoration: none;
         color: #000;
