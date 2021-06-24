@@ -75,11 +75,6 @@ const photos = [
         thumb: 'src/img/gallery/thumb44.jpg',
     },
     {
-        id: '43',
-        full: 'src/img/gallery/fullsize43.jpg',
-        thumb: 'src/img/gallery/thumb43.jpg',
-    },
-    {
         id: '42',
         full: 'src/img/gallery/fullsize42.jpg',
         thumb: 'src/img/gallery/thumb42.jpg',
