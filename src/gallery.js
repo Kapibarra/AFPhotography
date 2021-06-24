@@ -1,4 +1,105 @@
 const photos = [
+    {
+        id: '59',
+        full: 'src/img/gallery/fullsize59.jpg',
+        thumb: 'src/img/gallery/thumb59.jpg',
+    },
+    {
+        id: '60',
+        full: 'src/img/gallery/fullsize60.jpg',
+        thumb: 'src/img/gallery/thumb60.jpg',
+    },
+    {
+        id: '61',
+        full: 'src/img/gallery/fullsize61.jpg',
+        thumb: 'src/img/gallery/thumb61.jpg',
+    },
+    {
+        id: '62',
+        full: 'src/img/gallery/fullsize62.jpg',
+        thumb: 'src/img/gallery/thumb62.jpg',
+    },
+    {
+        id: '63',
+        full: 'src/img/gallery/fullsize63.jpg',
+        thumb: 'src/img/gallery/thumb63.jpg',
+    },
+    {
+        id: '64',
+        full: 'src/img/gallery/fullsize64.jpg',
+        thumb: 'src/img/gallery/thumb64.jpg',
+    },
+    {
+        id: '65',
+        full: 'src/img/gallery/fullsize65.jpg',
+        thumb: 'src/img/gallery/thumb65.jpg',
+    },
+    {
+        id: '66',
+        full: 'src/img/gallery/fullsize66.jpg',
+        thumb: 'src/img/gallery/thumb66.jpg',
+    },
+    {
+        id: '67',
+        full: 'src/img/gallery/fullsize67.jpg',
+        thumb: 'src/img/gallery/thumb67.jpg',
+    },
+    {
+        id: '68',
+        full: 'src/img/gallery/fullsize68.jpg',
+        thumb: 'src/img/gallery/thumb68.jpg',
+    },
+    {
+        id: '69',
+        full: 'src/img/gallery/fullsize69.jpg',
+        thumb: 'src/img/gallery/thumb69.jpg',
+    },
+    {
+        id: '70',
+        full: 'src/img/gallery/fullsize70.jpg',
+        thumb: 'src/img/gallery/thumb70.jpg',
+    },
+    {
+        id: '71',
+        full: 'src/img/gallery/fullsize71.jpg',
+        thumb: 'src/img/gallery/thumb71.jpg',
+    },
+    {
+        id: '72',
+        full: 'src/img/gallery/fullsize72.jpg',
+        thumb: 'src/img/gallery/thumb72.jpg',
+    },
+    {
+        id: '73',
+        full: 'src/img/gallery/fullsize73.jpg',
+        thumb: 'src/img/gallery/thumb73.jpg',
+    },
+    {
+        id: '74',
+        full: 'src/img/gallery/fullsize74.jpg',
+        thumb: 'src/img/gallery/thumb74.jpg',
+    },
+    {
+        id: '75',
+        full: 'src/img/gallery/fullsize75.jpg',
+        thumb: 'src/img/gallery/thumb75.jpg',
+    },
+    {
+        id: '76',
+        full: 'src/img/gallery/fullsize76.jpg',
+        thumb: 'src/img/gallery/thumb76.jpg',
+    },
+    {
+        id: '77',
+        full: 'src/img/gallery/fullsize77.jpg',
+        thumb: 'src/img/gallery/thumb77.jpg',
+    },
+    {
+        id: '78',
+        full: 'src/img/gallery/fullsize78.jpg',
+        thumb: 'src/img/gallery/thumb78.jpg',
+    },
+
      {
         id: '48',
         full: 'src/img/gallery/fullsize48.jpg',
