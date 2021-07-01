@@ -4,9 +4,9 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name = $_POST['user_name'];
-$phone = $_POST['user_phone'];
-$email = $_POST['user_email'];
+$name = $_POST['users_name'];
+$message = $_POST['users_message'];
+$email = $_POST['email_replyto'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -28,7 +28,7 @@ $mail->addAddress('gomudusu@p33.org');     // Кому будет уходить
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с тестового сайта';
+$mail->Subject = 'Заявка с сайта annfishphoto.ru';
 $mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
 $mail->AltBody = '';
 
