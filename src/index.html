@@ -45,6 +45,9 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
     <div class="page">
         <a class="skip-link" href="#" style="display: none;">Skip</a>
         <div class="header">
@@ -95,6 +98,13 @@
         <!--FOOTER ENDS-->
 
     </div>
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById('preloader').classList.add('preloader_hidden')
+            }, 2000)
+        };
+    </script>
 </body>
 
 <!-- 
