@@ -9,10 +9,12 @@
     opacity: 1;
 }
 
-// .preloader_hidden {
-//     transition: all 600ms;
-//     opacity: 0 !important;
-// }
+.preloader_hidden {
+    transition: all 600ms;
+    opacity: 0 !important;
+    z-index: -1 !important;
+}
+
 #loader {
     display: block;
     position: relative;

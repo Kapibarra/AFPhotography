@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div id="loader"></div>
+        <span class="preloader__text">ANNA <br/>FILIPPOVA</span>
+    </div>
     <div class="page">
         <div class="header">
             <div class="header__logo">
@@ -91,7 +95,13 @@
             <span class="screen-reader-text">Back to top</span>
         </a>
     </div>
-
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById('preloader').classList.add('preloader_hidden')
+            }, 300)
+        };
+    </script>
 </body>
 
 </html>
