@@ -10,8 +10,8 @@
     position: fixed;
     display: block;
     top: 186px;
-    left: 20px;
-    width: 246px;
+    left: 30px;
+    width: 226px;
     padding-top: 60px;
     & nav ul {
         list-style: none;
@@ -39,10 +39,16 @@
     }
     & .sidebar__contacts p {
         font-family: "Raleway", sans-serif;
-        font-weight: 200;
+        font-weight: 300;
         letter-spacing: 1px;
         text-transform: uppercase;
         font-size: 11px;
+        & a {
+            font-size: 12px;
+        }
+    }
+    .sidebar__contact-socialmedia {
+        margin-top: 20px;
     }
     .sidebar__contact-socialmedia a img {
         filter: opacity(0.5);

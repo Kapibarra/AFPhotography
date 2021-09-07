@@ -196,3 +196,23 @@ template {
 [hidden] {
     display: none;
 }
+
+body::-webkit-scrollbar {
+    width: 5px;
+    color: #ffffff;
+}
+
+body::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 5px 5px 6px rgba(255, 255, 255, 0.6);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #6b6b6b;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: inset 5px 5px 6px rgba(255, 255, 255, 0.6);
+}
