@@ -139,3 +139,37 @@ window.addEventListener("scroll", burgerButtonToggle);
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
+if (document.getElementsByClassName('gallery')) {
+  const personalShootingBtn = document.querySelector(".personal-shooting")
+  const crotiaBtn = document.querySelector(".crotia")
+
+  personalShootingBtn.addEventListener('click', personalShootingToggle)
+  crotiaBtn.addEventListener('click', crotiaToggle)
+}
+function personalShootingToggle() {
+  const galleryBlock = document.querySelector('.gallery')
+  const personalShootingBlock = document.querySelector('.personal__shooting')
+  const crotiaBlock = document.querySelector(".crotia__block")
+
+  galleryBlock.classList.add('unvisible-block')
+  galleryBlock.classList.remove('visible-block')
+
+  crotiaBlock.classList.remove('visible-block')
+  crotiaBlock.classList.add('unvisible-block')
+
+  personalShootingBlock.classList.remove('unvisible-block')
+  personalShootingBlock.classList.add("visible-block")
+}
+
+function crotiaToggle() {
+  const galleryBlock = document.querySelector('.gallery')
+  const personalShootingBlock = document.querySelector('.personal__shooting')
+  const crotiaBlock = document.querySelector(".crotia__block")
+
+  galleryBlock.classList.remove('visible-block')
+  galleryBlock.classList.add('unvisible-block')
+  personalShootingBlock.classList.remove('visible-block')
+  personalShootingBlock.classList.add('unvisible-block')
+  crotiaBlock.classList.remove('unvisible-block')
+  crotiaBlock.classList.add('visible-block')
+}

@@ -83,6 +83,14 @@
     font-size: 15px !important;
 }
 
+.visible-block {
+    display: block;
+}
+
+.unvisible-block {
+    display: none !important;
+}
+
 @media (max-width:1848px) {
     .sidebar {
         display: none;
