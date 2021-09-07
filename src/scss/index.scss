@@ -216,3 +216,7 @@ body::-webkit-scrollbar-thumb {
     outline: none;
     box-shadow: inset 5px 5px 6px rgba(255, 255, 255, 0.6);
 }
+
+.restricted:hover {
+    cursor: not-allowed;
+}
