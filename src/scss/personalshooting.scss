@@ -19,3 +19,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+@media (max-width: 1024px) {
+    .personal__shooting-card-wrapper {
+        justify-content: space-around;
+    }
+}
