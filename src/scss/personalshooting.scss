@@ -18,6 +18,31 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    & .personal-card {
+        margin: 0 auto;
+    }
+}
+
+.big-photo-personal {}
+
+@media (max-width:1024px) {
+    .big-photo-personal {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        align-items: center
+    }
+}
+
+@media (max-width:768px) {
+    .big-photo-personal {
+        width: 100%;
+        max-width: 350px;
+    }
+    .personal-card img {
+        width: 100%;
+        max-width: 350px;
+    }
 }
 
 @media (max-width: 1024px) {
