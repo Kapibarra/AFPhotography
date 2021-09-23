@@ -47,10 +47,10 @@
 </head>
 
 <body>
-    <!-- <div id="preloader">
+    <div id="preloader">
         <div id="loader"></div>
         <span class="preloader__text">ANNA <br/>FILIPPOVA</span>
-    </div> -->
+    </div>
     <div class="page">
         <a class="skip-link" href="#" style="display: none;">Skip</a>
         <div class="header">
@@ -69,9 +69,9 @@
             <nav class="nav">
                 <div class="sidebar-burger">
                     <div>
-                        <li class="sidebar__nav-item"><a class="personal-shooting">Personal shooting</a></li>
+                        <li class="sidebar__nav-item"><a class="personal-shooting-mobile">Personal shooting</a></li>
                         <li class="sidebar__nav-item blog"><a>Travel</a></li>
-                        <li class="sidebar__nav-item"><a class="crotia">Crotia</a></li>
+                        <li class="sidebar__nav-item"><a class="crotia-mobile">Crotia</a></li>
                     </div>
                 </div>
 
@@ -113,7 +113,7 @@
         </div>
         <main class="main">
             <div class="gallery" id="gallery"></div>
-            <div class="personal__shooting ">
+            <div class="personal__shooting unvisible-block">
                 <h2 class="personal__shooting-title wow animate__animated animate__fadeIn">PERSONAL SHOOTING</h2>
                 <h3 class="personal__shooting-name-title wow animate__animated animate__fadeIn">@Daria</h3>
                 <div class="personal__shooting-card-wrapper">
@@ -139,7 +139,7 @@
                     <div class="personal-card wow animate__animated animate__fadeInUp"><img src="../src/img/personalshooting/card4-3.png"></div>
                 </div>
             </div>
-            <div class="crotia__block">crotia</div>
+            <div class="crotia__block unvisible-block">crotia</div>
         </main>
 
         <!-- MAIN ENDS -->
@@ -167,7 +167,7 @@
         window.onload = function() {
             setTimeout(() => {
                 document.getElementById('preloader').classList.add('preloader_hidden')
-            }, 2000)
+            }, 100)
         };
     </script>
     <script>

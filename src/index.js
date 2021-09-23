@@ -18,7 +18,6 @@ function loadImage(page) {
     } else {
       const items = [];
       const gallery = document.querySelector("#gallery");
-      console.log(document.body.offsetHeight);
       // handle success here
       // const photo = result.response;
   
@@ -142,10 +141,17 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 if (document.getElementsByClassName('gallery')) {
   const personalShootingBtn = document.querySelector(".personal-shooting")
   const crotiaBtn = document.querySelector(".crotia")
+  const crotiaBtnMobile = document.querySelector(".crotia-mobile")
+  const personalShootingBtnMobile = document.querySelector('.personal-shooting-mobile')
+
+  console.log(crotiaBtnMobile, personalShootingBtnMobile);
 
   personalShootingBtn.addEventListener('click', personalShootingToggle)
   crotiaBtn.addEventListener('click', crotiaToggle)
+  personalShootingBtnMobile.addEventListener('click', personalShootingMobileToggle)
+  crotiaBtnMobile.addEventListener('click', crotiaMobileToggle)
 }
+
 function personalShootingToggle() {
   const galleryBlock = document.querySelector('.gallery')
   const personalShootingBlock = document.querySelector('.personal__shooting')
@@ -159,6 +165,7 @@ function personalShootingToggle() {
 
   personalShootingBlock.classList.remove('unvisible-block')
   personalShootingBlock.classList.add("visible-block")
+  console.log('ps work');
 }
 
 function crotiaToggle() {
@@ -172,4 +179,52 @@ function crotiaToggle() {
   personalShootingBlock.classList.add('unvisible-block')
   crotiaBlock.classList.remove('unvisible-block')
   crotiaBlock.classList.add('visible-block')
+}
+
+function personalShootingMobileToggle() {
+  const galleryBlock = document.querySelector('.gallery')
+  const personalShootingBlock = document.querySelector('.personal__shooting')
+  const crotiaBlock = document.querySelector(".crotia__block")
+  const navToggle = document.querySelector('.nav-toggle')
+  const nav = document.querySelector('.nav')
+
+  galleryBlock.classList.add('unvisible-block')
+  galleryBlock.classList.remove('visible-block')
+
+  crotiaBlock.classList.remove('visible-block')
+  crotiaBlock.classList.add('unvisible-block')
+
+  personalShootingBlock.classList.remove('unvisible-block')
+  personalShootingBlock.classList.add("visible-block")
+
+  setTimeout(() => {
+    navToggle.classList.remove('expanded')
+    nav.classList.remove('expanded')
+}, 100)
+
+  console.log('ps work');
+}
+
+function crotiaMobileToggle() {
+  const galleryBlock = document.querySelector('.gallery')
+  const personalShootingBlock = document.querySelector('.personal__shooting')
+  const crotiaBlock = document.querySelector(".crotia__block")
+  const navToggle = document.querySelector('.nav-toggle')
+  const nav = document.querySelector('.nav')
+
+  galleryBlock.classList.remove('visible-block')
+  galleryBlock.classList.add('unvisible-block')
+
+  personalShootingBlock.classList.remove('visible-block')
+  personalShootingBlock.classList.add('unvisible-block')
+
+  crotiaBlock.classList.remove('unvisible-block')
+  crotiaBlock.classList.add('visible-block')
+
+  setTimeout(() => {
+    navToggle.classList.remove('expanded')
+    nav.classList.remove('expanded')
+}, 100)
+
+  console.log('travel work work');
 }

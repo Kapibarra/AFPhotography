@@ -39,7 +39,7 @@
 
 .nav ul {
     position: absolute;
-    top: 30%;
+    top: 45%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -118,6 +118,36 @@
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+}
+
+.sidebar-burger {
+    position: absolute;
+    top: 20%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    & div li a {
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(20, 20, 20, 0);
+        transition: all 0.3s ease-in-out;
+    }
+    & div .blog a {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 35px;
+        text-transform: uppercase;
+        font-size: 18px !important;
+        border-bottom: 1px solid rgba(20, 20, 20, 0);
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 @media screen and (max-width: 410px) {
