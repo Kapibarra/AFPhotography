@@ -156,6 +156,7 @@ function personalShootingToggle() {
   const galleryBlock = document.querySelector('.gallery')
   const personalShootingBlock = document.querySelector('.personal__shooting')
   const crotiaBlock = document.querySelector(".crotia__block")
+  const loader = document.getElementById('preloader')
 
   galleryBlock.classList.add('unvisible-block')
   galleryBlock.classList.remove('visible-block')
@@ -165,20 +166,30 @@ function personalShootingToggle() {
 
   personalShootingBlock.classList.remove('unvisible-block')
   personalShootingBlock.classList.add("visible-block")
-  console.log('ps work');
+  loader.classList.remove('preloader_hidden')
+  setTimeout(() => {
+    loader.classList.add('preloader_hidden')
+  }, 500)
 }
 
 function crotiaToggle() {
   const galleryBlock = document.querySelector('.gallery')
   const personalShootingBlock = document.querySelector('.personal__shooting')
   const crotiaBlock = document.querySelector(".crotia__block")
+  const loader = document.getElementById('preloader')
 
   galleryBlock.classList.remove('visible-block')
   galleryBlock.classList.add('unvisible-block')
+  
   personalShootingBlock.classList.remove('visible-block')
   personalShootingBlock.classList.add('unvisible-block')
+
   crotiaBlock.classList.remove('unvisible-block')
   crotiaBlock.classList.add('visible-block')
+  loader.classList.remove('preloader_hidden')
+  setTimeout(() => {
+    loader.classList.add('preloader_hidden')
+  }, 500)
 }
 
 function personalShootingMobileToggle() {
