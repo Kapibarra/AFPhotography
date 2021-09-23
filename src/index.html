@@ -188,11 +188,8 @@
         window.onload = function() {
             setTimeout(() => {
                 document.getElementById('preloader').classList.add('preloader_hidden')
-            }, 100)
+            }, Math.floor(Math.random() * 2000))
         };
-    </script>
-    <script>
-        new WOW().init();
     </script>
 </body>
 

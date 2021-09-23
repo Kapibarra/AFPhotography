@@ -169,7 +169,7 @@ function personalShootingToggle() {
   loader.classList.remove('preloader_hidden')
   setTimeout(() => {
     loader.classList.add('preloader_hidden')
-  }, 500)
+  }, Math.floor(Math.random() * 2000))
 }
 
 function crotiaToggle() {
@@ -180,7 +180,7 @@ function crotiaToggle() {
 
   galleryBlock.classList.remove('visible-block')
   galleryBlock.classList.add('unvisible-block')
-  
+
   personalShootingBlock.classList.remove('visible-block')
   personalShootingBlock.classList.add('unvisible-block')
 
@@ -189,7 +189,7 @@ function crotiaToggle() {
   loader.classList.remove('preloader_hidden')
   setTimeout(() => {
     loader.classList.add('preloader_hidden')
-  }, 500)
+  }, Math.floor(Math.random() * 2000))
 }
 
 function personalShootingMobileToggle() {
