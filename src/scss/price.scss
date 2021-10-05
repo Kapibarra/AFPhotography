@@ -56,16 +56,44 @@ a {
     & img {
         display: block;
     }
+    & button {
+        padding: 12px 10px;
+        border: 0;
+        width: 230px;
+        display: block;
+        margin: 0 auto;
+        background: linear-gradient(to right, #f1f1f1 0%, #e0e0e0 100%);
+        border-radius: 3px;
+        margin-top: 30px;
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: 'Julius Sans One', sans-serif;
+        color: $black;
+        cursor: pointer;
+        opacity: 0.7;
+        transform: translateY(0px);
+        transition: all .3s ease-in-out;
+        &:hover {
+            transition: all .3s ease-in-out;
+            box-shadow: 0 3px 12px 0 rgba(#000, 0.2);
+            transform: translateY(-6px);
+            cursor: pointer;
+        }
+    }
 }
 
 .inner__package-description {
     width: 100%;
     max-width: 900px;
     & ul {
+        list-style: circle;
         margin-bottom: 40px;
         font-family: "Raleway", sans-serif;
         font-weight: 300;
         font-size: 18px;
+        & li {
+            margin-top: 15px;
+        }
     }
 }
 
@@ -174,31 +202,6 @@ a {
     margin-bottom: 10px;
 }
 
-.item__button-price {
-    padding: 12px 10px;
-    border: 0;
-    width: 230px;
-    display: block;
-    margin: 0 auto;
-    background: linear-gradient(to right, #f1f1f1 0%, #e0e0e0 100%);
-    border-radius: 3px;
-    margin-top: 10px;
-    color: #fff;
-    letter-spacing: 1px;
-    font-family: 'Julius Sans One', sans-serif;
-    color: $black;
-    cursor: pointer;
-    opacity: 0.7;
-    transform: translateY(0px);
-    transition: all .3s ease-in-out;
-    &:hover {
-        transition: all .3s ease-in-out;
-        box-shadow: 0 3px 12px 0 rgba(#000, 0.2);
-        transform: translateY(-6px);
-        cursor: pointer;
-    }
-}
-
 .addpackages-item__button-price {
     padding: 12px 10px;
     border: 0;
@@ -253,7 +256,6 @@ a {
     font-weight: 300;
     font-size: 18px;
     width: 90%;
-    letter-spacing: 2px;
     line-height: 30px;
     list-style: circle;
 }
