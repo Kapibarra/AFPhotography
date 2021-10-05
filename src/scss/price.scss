@@ -14,16 +14,19 @@ a {
 }
 
 .packages__title {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
     display: block;
     text-align: left;
-    font-family: "Raleway", sans-serif;
-    font-weight: 200;
-    font-size: 50px;
-    letter-spacing: 12px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 62px;
     margin-top: 60px;
+    line-height: 50px;
+    margin-bottom: 60px;
+}
+
+.small-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
 }
 
 .packages__subtitle {
@@ -38,6 +41,20 @@ a {
     margin-top: 60px;
     margin-bottom: 60px;
     letter-spacing: 4px;
+}
+
+.inner__package-wrapper {
+    width: 100%;
+    max-width: 1380px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.inner__package-description {
+    width: 100%;
+    max-width: 900px;
 }
 
 .packages__container {
