@@ -30,31 +30,43 @@ a {
 }
 
 .packages__subtitle {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
     display: block;
     text-align: left;
-    font-family: "Raleway", sans-serif;
-    font-weight: 200;
-    font-size: 25px;
-    margin-top: 60px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
     margin-bottom: 60px;
-    letter-spacing: 4px;
+    margin-top: 0 !important;
 }
 
 .inner__package-wrapper {
     width: 100%;
     max-width: 1380px;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
 
+.inner__package-image {
+    display: flex;
+    flex-direction: column;
+    & img {
+        display: block;
+    }
+}
+
 .inner__package-description {
     width: 100%;
     max-width: 900px;
+    & ul {
+        margin-bottom: 40px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+    }
 }
 
 .packages__container {
