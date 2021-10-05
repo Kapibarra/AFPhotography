@@ -245,10 +245,12 @@ a {
 .packages__description-text {
     width: 90%;
     max-width: 1400px;
-    margin: 0 auto;
     display: block;
     text-align: left;
     margin-bottom: 60px;
+    & ul {
+        padding-inline-start: 15px !important;
+    }
 }
 
 .packages__description-item {
