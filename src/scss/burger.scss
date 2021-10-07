@@ -122,7 +122,7 @@
 
 .sidebar-burger {
     position: absolute;
-    top: 15%;
+    top: 30%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -154,6 +154,10 @@
     font-family: "Raleway", sans-serif;
     font-weight: 500 !important;
     font-size: 18px !important;
+}
+
+.sidebar__contact-socialmedia a img {
+    padding-right: 10px;
 }
 
 .crotia-mobile {
