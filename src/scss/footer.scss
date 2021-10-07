@@ -38,9 +38,9 @@
 }
 
 .footer__social-logo {
-    height: 43px;
-    width: 45px;
-    filter: grayscale(100);
+    width: 40px;
+    filter: opacity(0.5);
+    transition: all 0.3s ease-in-out;
 }
 
 .footer__social-logo:hover {
