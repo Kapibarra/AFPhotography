@@ -300,31 +300,6 @@ const photos = [
         full: 'src/img/gallery/fullsize88.jpg',
         thumb: 'src/img/gallery/thumb88.jpg',
     },
-    {
-        id: '58',
-        full: 'src/img/gallery/fullsize58.jpg',
-        thumb: 'src/img/gallery/thumb58.jpg',
-    },
-    {
-        id: '47',
-        full: 'src/img/gallery/fullsize47.jpg',
-        thumb: 'src/img/gallery/thumb47.jpg',
-    },
-    {
-        id: '46',
-        full: 'src/img/gallery/fullsize46.jpg',
-        thumb: 'src/img/gallery/thumb46.jpg',
-    },
-    {
-        id: '45',
-        full: 'src/img/gallery/fullsize45.jpg',
-        thumb: 'src/img/gallery/thumb45.jpg',
-    },
-    {
-        id: '44',
-        full: 'src/img/gallery/fullsize44.jpg',
-        thumb: 'src/img/gallery/thumb44.jpg',
-    },
 ]
 
 export default photos
