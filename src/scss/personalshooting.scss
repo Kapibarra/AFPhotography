@@ -20,6 +20,12 @@
     justify-content: space-between;
     & .personal-card {
         margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+        & img {
+            width: 100%;
+            max-width: 400px;
+        }
     }
 }
 
